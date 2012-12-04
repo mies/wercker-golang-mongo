@@ -1,12 +1,12 @@
 {
-    "services" : {
-        "mongodb" : true
-    }
+  "services" : {
+    "mongodb" : true
+  },
   "customSteps": {
     "go_unit_test" : {
-        "commands" : [
-            "go test"
-            ]
+      "commands" : [
+      "go test"
+      ]
     }
   },
   "preInstallScripts" : [
