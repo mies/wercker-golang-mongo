@@ -3,6 +3,7 @@ package main
 import (
 	"os"
 	"testing"
+	"time"
 
 	"labix.org/v2/mgo"
 	"labix.org/v2/mgo/bson"
@@ -16,7 +17,7 @@ func Test_StoreAndFind(t *testing.T) {
 	defer session.Close()
 
 	conn := session.DB("test").C("decepticons")
-	err = conn.Insert(&Decepticon{"Shockwave"}, &Decepticon{"Starscream"})
+	err = conn.Insert(&Decepticon{"Shockwave", time.Now()}, &Decepticon{"Starscream", time.Now()})
 	if err != nil {
 		t.Error("Could not insert a Decepticon")
 	}
