@@ -12,7 +12,7 @@
   "preInstallScripts" : [
     "mkdir -p $HOME/go/src",
     "export GOPATH=$HOME/go",
-    "sudo DEBIAN_FRONTEND=noninteractive apt-get -y install golang",
+    "sudo DEBIAN_FRONTEND=noninteractive apt-get -y install golang bzr",
     "go get labix.org/v2/mgo"
   ]
 }
