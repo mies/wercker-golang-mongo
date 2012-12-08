@@ -4,7 +4,7 @@ import (
 	"os"
 	"time"
 )
-
+// define data structure
 type Decepticon struct {
 	Name string
 	Date time.Time
