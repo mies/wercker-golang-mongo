@@ -1,12 +1,11 @@
 package main
 
 import (
+	"labix.org/v2/mgo"
+	"labix.org/v2/mgo/bson"
 	"os"
 	"testing"
 	"time"
-
-	"labix.org/v2/mgo"
-	"labix.org/v2/mgo/bson"
 )
 
 func Test_StoreAndFind(t *testing.T) {
