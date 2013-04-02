@@ -2,12 +2,5 @@
   "services" : {
     "mongodb" : true
   },
-  "packages": ["bzr"],
-  "preInstalScripts": {
-    "pre-install": [
-      "sudo DEBIAN_FRONTEND=noninteractive apt-get -y install golang bzr",
-      "bzr",
-      "go get labix.org/v2/mgo"
-    ]
-  }
+  "packages": ["bzr"]
 }
