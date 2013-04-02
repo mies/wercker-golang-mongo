@@ -2,17 +2,12 @@
   "services" : {
     "mongodb" : true
   },
+  "packages": ["bzr"],
   "custom steps": {
     "go unit test" : {
       "commands" : [
         "go test"
       ]
     }
-  },
-  "pre-install" : [
-    "mkdir -p $HOME/go/src",
-    "export GOPATH=$HOME/go",
-    "sudo DEBIAN_FRONTEND=noninteractive apt-get -y install golang bzr",
-    "go get labix.org/v2/mgo"
-  ]
+  }
 }
