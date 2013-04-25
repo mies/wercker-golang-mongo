@@ -1,6 +1,5 @@
 {
   "services" : {
     "mongodb" : true
-  },
-  "packages": ["bzr"]
+  }
 }
